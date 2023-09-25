@@ -109,7 +109,7 @@ document.addEventListener("DOMContentLoaded", () => {
         var newImageSrc2 = "assets/Hero-img.png";
         var newImageSrc3 = "assets/aboutus=img.png";
         var newImageSrc4 = "assets/Sent Message-cuate 1.svg";
-        var newImageSrc5 = "assets/Frame 24.svg";
+        var newImageSrc5 = "assets/Frame 23.svg";
         img1.src = newImageSrc;
         img2.src = newImageSrc2;
         img3.src = newImageSrc3;
@@ -121,7 +121,7 @@ document.addEventListener("DOMContentLoaded", () => {
         var newImageSrc2 = "assets/Group 3.svg";
         var newImageSrc3 = "assets/Application programming interface-pana.png";
         var newImageSrc4 = "assets/sentm.svg";
-        var newImageSrc5 = "assets/Frame 23.svg";
+        var newImageSrc5 = "assets/Frame 24.svg";
         img1.src = newImageSrc;
         img2.src = newImageSrc2;
         img3.src = newImageSrc3;
@@ -150,7 +150,7 @@ document.addEventListener("DOMContentLoaded", () => {
         var newImageSrc2 = "assets/Hero-img.png";
         var newImageSrc3 = "assets/aboutus=img.png";
         var newImageSrc4 = "assets/Sent Message-cuate 1.svg";
-        var newImageSrc5 = "assets/Frame 24.svg";
+        var newImageSrc5 = "assets/Frame 23.svg";
         img1.src = newImageSrc;
         img2.src = newImageSrc2;
         img3.src = newImageSrc3;
@@ -163,7 +163,7 @@ document.addEventListener("DOMContentLoaded", () => {
         var newImageSrc2 = "assets/Group 3.svg";
         var newImageSrc3 = "assets/Application programming interface-pana.png";
         var newImageSrc4 = "assets/sentm.svg";
-        var newImageSrc5 = "assets/Frame 23.svg";
+        var newImageSrc5 = "assets/Frame 24.svg";
         img1.src = newImageSrc;
         img2.src = newImageSrc2;
         img3.src = newImageSrc3;
@@ -185,11 +185,11 @@ document.addEventListener("DOMContentLoaded", () => {
       isDarkmod = !isDarkmod;
       if (isDarkmod) {
         document.body.classList.add("dark-theme");
-        var newImageSrc5 = "assets/Frame 24.svg";
+        var newImageSrc5 = "assets/Frame 23.svg";
         night.src = newImageSrc5
       } else {
         document.body.classList.remove("dark-theme");
-        var newImageSrc5 = "assets/Frame 23.svg";
+        var newImageSrc5 = "assets/Frame 24.svg";
         night.src = newImageSrc5
       }
     });
