@@ -277,3 +277,35 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 
+
+// for our cases videos
+document.addEventListener("DOMContentLoaded", function() {
+  const caseSlides = document.querySelectorAll(".caseSlide");
+
+  caseSlides.forEach((caseSlide) => {
+    const video = caseSlide.querySelector(".vid");
+
+    caseSlide.addEventListener("mouseenter", () => {
+      if (typeof video.play === 'function') {
+        video.muted = false;
+        video.play();
+        video.currentTime = 0;
+        video.style.opacity = 1;
+      }
+    });
+
+    caseSlide.addEventListener("mouseleave", () => {
+      if (typeof video.pause === 'function') {
+        video.muted = true;
+        video.pause();
+        video.style.opacity = 0;
+      }
+    });
+  });
+});
+
+
+
+
+
+
