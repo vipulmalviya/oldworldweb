@@ -1247,9 +1247,9 @@ button {
 
 .owl-carousel.owl-drag .owl-item {
   /* background: var(--backGround-color); */
-  padding: 1rem;
+  padding: .5rem;
   border-radius: 18px;
-  width: 400px;
+  width: 350px;
   height: 600px;
   display: flex;
   justify-content: center;
@@ -1257,8 +1257,7 @@ button {
 }
 .caseSlide1,
 .caseSlide2,
-.caseSlide3,
-.caseSlide4 {
+.caseSlide3{
   position: relative;
   display: flex;
   align-items: end;
@@ -1267,27 +1266,22 @@ button {
   position: relative;
   color: var(--heading-color);
   font-size: var(--h2-font-size);
+  border: 10px solid var(--backGround-color);
 }
 .caseSlide1{
-  background: url("assets/Screenshot\ from\ 2023-10-05\ 15-06-01.png") no-repeat;
+  background: url("assets/sb.png") no-repeat;
   background-position: top;
   background-size: cover;
   object-fit: cover;
 }
 .caseSlide2{
-  background: url("assets/Screenshot\ from\ 2023-10-05\ 16-40-07.png") no-repeat;
+  background: url("assets/oww.png") no-repeat;
   background-position: top;
   background-size: cover;
-  object-fit: cover;
+  object-fit: fill;
 }
 .caseSlide3{
-  background: url("assets/Screenshot\ from\ 2023-10-05\ 15-06-01.png") no-repeat;
-  background-position: top;
-  background-size: cover;
-  object-fit: cover;
-}
-.caseSlide4{
-  background: url("assets/Screenshot\ from\ 2023-10-05\ 15-06-01.png") no-repeat;
+  background: url("assets/refine.png") no-repeat;
   background-position: top;
   background-size: cover;
   object-fit: cover;
