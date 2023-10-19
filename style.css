@@ -1586,7 +1586,7 @@ footer .flex {
   color: var(--text-color);
 }
 
-.footerItems p {
+.footerItems p,a {
   margin-bottom: var(--mb-0-75);
 }
 
