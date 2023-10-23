@@ -69,7 +69,7 @@ $(document).ready(function () {
 $('.owl-carousel').owlCarousel({
   responsiveClass: true,
   margin: 10,
-  items: 4,
+  items: 3,
   // autoplay: true,
   // autoplayTimeout: 4000,
   // autoplayHoverPause: true,
@@ -303,9 +303,3 @@ document.addEventListener("DOMContentLoaded", function() {
     });
   });
 });
-
-
-
-
-
-
