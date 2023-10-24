@@ -273,7 +273,9 @@ img {
   rotate: -35deg;
 }
 
-
+.higlight{
+  color: var(--accesnt-color) !important;
+}
 
 /* HOVER BUTTON */
 
@@ -1748,17 +1750,21 @@ a {
   /* padding: 1rem; */
   background-color: var(--backGround-color);
 }
-.owl-stage{
+
+.owl-stage {
   display: flex;
 }
+
 .owl-nav {
   display: none;
 }
-.item{
+
+.item {
   padding: 1rem;
 }
-.item img{
-  height:100%;
+
+.item img {
+  height: 100%;
   width: 100%;
   object-fit: cover;
 }
@@ -1767,13 +1773,15 @@ a {
   margin: 0 .5rem 0 0;
   width: 20px;
 }
-.casebtns{
+
+.casebtns {
   width: 100%;
   height: 5rem;
   justify-content: space-between;
   align-items: center;
-  
+
 }
+
 .CpreBtn {
   border-bottom: 2px solid var(--text-color);
   width: 100px;
@@ -1800,54 +1808,207 @@ a {
 }
 
 /* about project styling */
-.pds,.projectdetails{
-  padding:3rem 10rem;
+.pds,
+.projectdetails {
+  padding: 3rem 10rem;
 }
-.dvaider{
+
+.dvaider {
   margin: 2rem 0rem;
   width: 100%;
   height: 2px;
   background-color: var(--backGround-color);
 }
-.sectionhadding{
+
+.sectionhadding {
   color: var(--text-color);
   font-size: 1.5rem;
   margin-bottom: 1rem;
 }
-.sectiondesc{
+
+.sectiondesc {
   color: var(--text-color);
   font-size: 1rem;
   margin-bottom: 1rem;
 }
 
-.projectdetails{
+.projectdetails {
   color: var(--text-color);
   grid-template-columns: auto auto;
   grid-template-rows: auto auto;
   row-gap: 3rem;
 }
 
-.ahadding{
+.ahadding {
   color: var(--text-color);
   font-size: 1.2rem;
   font-weight: 800;
 }
-.ahadding > span{
+
+.ahadding>span {
   font-size: 1rem;
   font-weight: 500;
 }
-.cBtn{
+
+.cBtn {
   margin: 5rem 10rem;
   width: fit-content;
 }
-.protfolioS{
+
+.protfolioS {
   background-color: var(--backGround-color);
   padding: 5rem 1rem !important;
 }
 
-a:active{
+a:active {
   color: #9747ff !important;
 }
+
+
+/* aboutUs page styling*/
+.abtns{
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+}
+.effect.hover-text.All::after,
+.effect.hover-text.All::before {
+  /* color: var(--text-color); */
+  content: "All";
+  left: 0;
+}
+
+.effect.hover-text.UI_UX_Design::after,
+.effect.hover-text.UI_UX_Design::before {
+  /* color: var(--text-color); */
+  content: "UI UX Design";
+  left: 0;
+}
+
+.effect.hover-text.E-commerce::after,
+.effect.hover-text.E-commerce::before {
+  /* color: var(--text-color); */
+  content: "E-commerce";
+  left: 0;
+}
+
+.effect.hover-text.Security::after,
+.effect.hover-text.Security::before {
+  /* color: var(--text-color); */
+  content: "Security";
+  left: 0;
+}
+
+.All,
+.UI_UX_Design,
+.E-commerce,
+.Security {
+  border-bottom: 1px solid var(--accesnt-color);
+  margin: 1rem;
+}
+
+.protfolio {
+  /* min-height: 120vh; */
+  width: 100%;
+  background: var(--backGround-color);
+  min-height: 100vh;
+  position: relative;
+  /* background-color: red; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.allcards,
+.securitycards,
+.Ecommerce,
+.ui_ux {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+}
+
+.cardContainer {
+  background-color: var(--backGround-color);
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: auto auto;
+  /* align-items: center;
+  justify-content: center; */
+  perspective: 2000px;
+  gap: 2rem;
+  flex-wrap: wrap;
+  padding: 2rem;
+}
+
+.center_card {
+  position: relative;
+  transition: transform cubic-bezier(0.075, 0.82, 0.165, 1)2s;
+  transform-style: preserve-3d;
+  /* height: 400px;
+  width: 350px; */
+}
+
+.foruntside {
+  position: absolute;
+  background-color: var(--text-color);
+  backface-visibility: hidden;
+  width: 100%;
+  height: 100%;
+  font-size: 3rem;
+  transform: rotateY(0deg);
+  overflow: hidden;
+}
+
+.foruntside img {
+  object-fit: cover;
+  width: 100%;
+}
+
+.backside {
+  position: absolute;
+  background-color: var(--text-color);
+  backface-visibility: hidden;
+  height: 100%;
+  width: 100%;
+  font-size: 3rem;
+  transform: rotateY(180deg);
+  overflow: hidden;
+}
+
+/* 
+.allcards .foruntside {
+  background-color: red;
+}
+
+.securitycards .foruntside {
+  background-color: green;
+}
+
+.Ecommerce .foruntside {
+  background-color: yellow;
+}
+
+.ui_ux .foruntside {
+  background-color: black;
+} */
+
+.aBtn {
+  width: fit-content;
+  margin: 2rem 0;
+}
+
+.center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+
+
+
+
 
 @media screen and (max-width:1440px) {
   .serviceMenu {
@@ -2136,11 +2297,20 @@ a:active{
   .blogPost {
     min-height: auto;
   }
-  .pds,.projectdetails{
-    padding:1rem 1rem;
+
+  .pds,
+  .projectdetails {
+    padding: 1rem 1rem;
   }
-  .cBtn{
+
+  .cBtn {
     margin: 1rem;
+  }
+
+
+  .cardContainer {
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
   }
 }
 
@@ -2256,16 +2426,17 @@ a:active{
   .heroBtn {
     margin-bottom: 1rem;
   }
-  .lable2{
+
+  .lable2 {
     font-size: .8rem;
 
   }
 
-.projectdetails{
-  grid-template-columns: auto;
-  grid-template-rows: auto;
-  row-gap: 1rem;
-}
+  .projectdetails {
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    row-gap: 1rem;
+  }
 }
 
 @media screen and (max-width: 428px) {
@@ -2558,6 +2729,10 @@ a:active{
   .lable {
     font-size: 1.2rem;
     margin: 1rem 0;
+  }
+  .abtns{
+    flex-wrap: wrap;
+    justify-content: space-around;
   }
 }
 

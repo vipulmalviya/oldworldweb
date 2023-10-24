@@ -22,13 +22,11 @@ a.forEach(dets => {
 });
 
 
-
-
-$(document).ready(function () {
-  $("#prevBtn").on("click", function () {
+  $(document).ready(function () {
+    $("#prevBtn").on("click", function () {
     $(".carousel-one").trigger("prev.owl.carousel");
   });
-
+  
   $("#nextBtn").on("click", function () {
     $(".carousel-one").trigger("next.owl.carousel");
   });
@@ -53,7 +51,6 @@ $('.carousel-one').owlCarousel({
     },
   }
 })
-
 
 
 $(document).ready(function () {
@@ -302,4 +299,125 @@ document.addEventListener("DOMContentLoaded", function() {
       }
     });
   });
+});
+
+
+
+
+// caseWorks scripting
+
+$(document).ready(function () {
+  $("#CprevBtn").on("click", function () {
+      $(".owl-carousel2").trigger("prev.owl.carousel");
+  });
+
+  $("#CnextBtn").on("click", function () {
+      $(".owl-carousel2").trigger("next.owl.carousel");
+  });
+});
+// Initialize the new banner slider
+$(" .owl-carousel2").owlCarousel({
+  items: 1,
+  nav:false,
+  dots:false,
+});
+
+
+$('.owl-carousel3').owlCarousel({
+  responsiveClass: true,
+  margin: 10,
+  items: 3,
+  // autoplay: true,
+  // autoplayTimeout: 4000,
+  // autoplayHoverPause: true,
+  responsive: {
+    0: {
+      items: 1,
+      nav: false
+    },
+    768: {
+      items: 2,
+      nav: false
+    },
+    1000: {
+      items: 3,
+      nav: false
+    },
+  }
+})
+
+const centerCards = document.querySelectorAll('.center_card');
+
+centerCards.forEach(centerCard => {
+    let currentRotation = 0; 
+
+    centerCard.addEventListener("mouseenter", () => {
+        currentRotation += 180; 
+        anime({
+            targets: centerCard,
+            rotateY: currentRotation + 'deg'
+        });
+    });
+
+    centerCard.addEventListener("mouseleave", () => {
+        currentRotation += 180;
+        anime({
+            targets: centerCard,
+            rotateY: currentRotation + 'deg'
+        });
+    });
+});
+
+
+
+
+// aboutus page scripting
+let all = document.querySelector(".All");
+let UI_UX_Design = document.querySelector(".UI_UX_Design");
+let Ecommerceall = document.querySelector(".E-commerce");
+let Security = document.querySelector(".Security");
+
+let allcards = document.querySelector(".allcards");
+let ui_ux = document.querySelector(".ui_ux");
+let Ecommerce = document.querySelector(".Ecommerce");
+let securitycards = document.querySelector(".securitycards");
+
+all.addEventListener('click', () => {
+    // Set z-index for the clicked card container to 1
+    allcards.style.zIndex = 1;
+
+    // Reset z-index for other card containers to 0
+    ui_ux.style.zIndex = 0;
+    Ecommerce.style.zIndex = 0;
+    securitycards.style.zIndex = 0;
+});
+
+UI_UX_Design.addEventListener('click', () => {
+    // Set z-index for the clicked card container to 1
+    ui_ux.style.zIndex = 1;
+
+    // Reset z-index for other card containers to 0
+    allcards.style.zIndex = 0;
+    Ecommerce.style.zIndex = 0;
+    securitycards.style.zIndex = 0;
+});
+
+Ecommerceall.addEventListener('click', () => {
+    // Set z-index for the clicked card container to 1
+    Ecommerce.style.zIndex = 1;
+
+    // Reset z-index for other card containers to 0
+    allcards.style.zIndex = 0;
+    ui_ux.style.zIndex = 0;
+    securitycards.style.zIndex = 0;
+});
+
+Security.addEventListener('click', () => {
+    // Set z-index for the clicked card container to 1
+    securitycards.style.zIndex = 1;
+
+    // Reset z-index for other card containers to 0
+    allcards.style.zIndex = 0;
+    ui_ux.style.zIndex = 0;
+    Ecommerce.style.zIndex = 0;
 });
