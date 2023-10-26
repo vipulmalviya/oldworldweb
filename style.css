@@ -154,6 +154,7 @@ ul {
 
 a {
   text-decoration: none;
+  color: #888585 !important;
 }
 
 button {
@@ -273,7 +274,7 @@ img {
   rotate: -35deg;
 }
 
-.higlight{
+.higlight {
   color: var(--accesnt-color) !important;
 }
 
@@ -309,10 +310,6 @@ li a {
   font-size: 1.25rem;
   color: var(--heading-color);
   text-transform: capitalize;
-}
-
-a {
-  color: #888585 !important;
 }
 
 /* menuOnHOver */
@@ -1641,7 +1638,7 @@ a {
   width: 100vw;
   background-color: var(--backGround-color);
   right: -120%;
-  z-index: 1;
+  z-index: 100;
   transition: cubic-bezier(0.075, 0.82, 0.165, 1)1s;
   display: none;
 }
@@ -1735,7 +1732,8 @@ a {
 .lable2 {
   width: fit-content;
   text-transform: uppercase;
-  font-size: 1rem;
+  /* opacity: .7; */
+  font-size: var(--small-font-size);
   font-weight: 400;
   white-space: nowrap;
   color: var(--text-color);
@@ -1866,11 +1864,12 @@ a:active {
 
 
 /* aboutUs page styling*/
-.abtns{
+.abtns {
   display: flex;
   align-items: center;
   flex-direction: row;
 }
+
 .effect.hover-text.All::after,
 .effect.hover-text.All::before {
   /* color: var(--text-color); */
@@ -1903,8 +1902,9 @@ a:active {
 .UI_UX_Design,
 .E-commerce,
 .Security {
-  border-bottom: 1px solid var(--accesnt-color);
+  border-bottom:1px solid var(--accesnt-color); 
   margin: 1rem;
+  position: relative;
 }
 
 .protfolio {
@@ -1976,23 +1976,6 @@ a:active {
   overflow: hidden;
 }
 
-/* 
-.allcards .foruntside {
-  background-color: red;
-}
-
-.securitycards .foruntside {
-  background-color: green;
-}
-
-.Ecommerce .foruntside {
-  background-color: yellow;
-}
-
-.ui_ux .foruntside {
-  background-color: black;
-} */
-
 .aBtn {
   width: fit-content;
   margin: 2rem 0;
@@ -2004,9 +1987,6 @@ a:active {
   justify-content: center;
   flex-direction: column;
 }
-
-
-
 
 
 
@@ -2312,6 +2292,7 @@ a:active {
     grid-template-columns: auto auto;
     grid-template-rows: auto auto;
   }
+
 }
 
 
@@ -2437,6 +2418,10 @@ a:active {
     grid-template-rows: auto;
     row-gap: 1rem;
   }
+  .cardContainer {
+    gap: 1rem;
+   padding: 1rem;
+ }
 }
 
 @media screen and (max-width: 428px) {
@@ -2730,7 +2715,8 @@ a:active {
     font-size: 1.2rem;
     margin: 1rem 0;
   }
-  .abtns{
+
+  .abtns {
     flex-wrap: wrap;
     justify-content: space-around;
   }
