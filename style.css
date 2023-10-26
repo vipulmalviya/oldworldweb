@@ -2408,11 +2408,6 @@ a:active {
     margin-bottom: 1rem;
   }
 
-  .lable2 {
-    font-size: .8rem;
-
-  }
-
   .projectdetails {
     grid-template-columns: auto;
     grid-template-rows: auto;
