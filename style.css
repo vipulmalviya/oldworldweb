@@ -1861,6 +1861,21 @@ a {
 a:active {
   color: #9747ff !important;
 }
+.All{
+  width: 70px;
+  position: relative;
+  margin: 1rem;
+}
+.All > .underline::after{
+  content: "";
+  height: 1px;
+  width: 80%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  position: absolute;
+  background-color: #9747ff;
+  bottom: 0;
+}
 
 
 /* aboutUs page styling*/
@@ -1898,7 +1913,6 @@ a:active {
   left: 0;
 }
 
-.All,
 .UI_UX_Design,
 .E-commerce,
 .Security {
@@ -1911,7 +1925,7 @@ a:active {
   /* min-height: 120vh; */
   width: 100%;
   background: var(--backGround-color);
-  min-height: 100vh;
+  min-height: 130vh;
   position: relative;
   /* background-color: red; */
   display: flex;
@@ -1929,24 +1943,21 @@ a:active {
 }
 
 .cardContainer {
-  background-color: var(--backGround-color);
+  /* background-color: var(--backGround-color); */
   display: grid;
   grid-template-columns: auto auto auto;
   grid-template-rows: auto auto;
   /* align-items: center;
   justify-content: center; */
-  perspective: 2000px;
-  gap: 2rem;
+  gap: 1rem;
   flex-wrap: wrap;
-  padding: 2rem;
+  padding: 1rem;
 }
 
 .center_card {
   position: relative;
+  overflow: hidden;
   transition: transform cubic-bezier(0.075, 0.82, 0.165, 1)2s;
-  transform-style: preserve-3d;
-  /* height: 400px;
-  width: 350px; */
 }
 
 .foruntside {
@@ -1955,25 +1966,13 @@ a:active {
   backface-visibility: hidden;
   width: 100%;
   height: 100%;
-  font-size: 3rem;
-  transform: rotateY(0deg);
+  /* transform: rotateY(0deg); */
   overflow: hidden;
 }
 
 .foruntside img {
   object-fit: cover;
   width: 100%;
-}
-
-.backside {
-  position: absolute;
-  background-color: var(--text-color);
-  backface-visibility: hidden;
-  height: 100%;
-  width: 100%;
-  font-size: 3rem;
-  transform: rotateY(180deg);
-  overflow: hidden;
 }
 
 .aBtn {
@@ -1987,6 +1986,34 @@ a:active {
   justify-content: center;
   flex-direction: column;
 }
+
+.cardinfo {
+  position: absolute;
+  width: 100%;
+  bottom: -25vh;
+  transition: cubic-bezier(0.075, 0.82, 0.165, 1) 1s;
+  background-image: linear-gradient(transparent, black);
+  text-align: center;
+  color: white;
+  padding: 15px;
+  box-sizing: border-box;
+  line-height: 2rem;
+}
+.hedding{
+  text-align: center;
+  font-size: var(--h2-font-size);
+  color: white;
+}
+.subhedding{
+  font-size: var(--h3-font-size);
+}
+
+
+.center_card:hover .cardinfo {
+  bottom: 0;
+}
+
+
 
 
 
@@ -2292,6 +2319,10 @@ a:active {
     grid-template-columns: auto auto;
     grid-template-rows: auto auto;
   }
+  .protfolio {
+    min-height: 120vh;
+  }
+  
 
 }
 
@@ -2714,6 +2745,14 @@ a:active {
   .abtns {
     flex-wrap: wrap;
     justify-content: space-around;
+  }
+  .protfolio {
+    min-height: 430vh;
+  }
+
+  .cardContainer {
+    grid-template-columns: auto;
+    grid-template-rows: auto;
   }
 }
 

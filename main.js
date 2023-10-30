@@ -346,27 +346,27 @@ $('.owl-carousel3').owlCarousel({
   }
 })
 
-const centerCards = document.querySelectorAll('.center_card');
+// const centerCards = document.querySelectorAll('.center_card');
 
-centerCards.forEach(centerCard => {
-    let currentRotation = 0; 
+// centerCards.forEach(centerCard => {
+//     let currentRotation = 0; 
 
-    centerCard.addEventListener("mouseenter", () => {
-        currentRotation += 180; 
-        anime({
-            targets: centerCard,
-            rotateY: currentRotation + 'deg'
-        });
-    });
+//     centerCard.addEventListener("mouseenter", () => {
+//         currentRotation += 180; 
+//         anime({
+//             targets: centerCard,
+//             rotateY: currentRotation + 'deg'
+//         });
+//     });
 
-    centerCard.addEventListener("mouseleave", () => {
-        currentRotation += 180;
-        anime({
-            targets: centerCard,
-            rotateY: currentRotation + 'deg'
-        });
-    });
-});
+//     centerCard.addEventListener("mouseleave", () => {
+//         currentRotation += 180;
+//         anime({
+//             targets: centerCard,
+//             rotateY: currentRotation + 'deg'
+//         });
+//     });
+// });
 
 
 
