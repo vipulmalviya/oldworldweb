@@ -221,6 +221,19 @@ img {
   margin-left: auto;
   margin-right: auto;
 }
+.footercontainer {
+  max-width: 95rem;
+  width: 90%;
+  height: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.centerl-f{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
 
 .flex {
   display: flex;
@@ -1289,21 +1302,21 @@ button {
 
 .caseSlide1 {
   background: url("assets/sb.png") no-repeat;
-  /* background-position: center; */
+  background-position: top center;
   background-size: cover;
 
 }
 
 .caseSlide2 {
   background: url("assets/oww.png") no-repeat;
-  /* background-position:center; */
+  background-position: top center;
   background-size: cover;
 
 }
 
 .caseSlide3 {
   background: url("assets/refine.png") no-repeat;
-  /* background-position:center; */
+  background-position: top center;
   background-size: cover;
 
 }
@@ -1625,6 +1638,7 @@ a {
   justify-content: flex-start;
   gap: 0;
 }
+
 
 .footerbtn #modes2 {
   display: none;
